@@ -58,16 +58,16 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-lg font-semibold mb-6">Contact</h4>
             <div className="space-y-3 text-secondary-foreground/70">
-              <p>Industrial Area</p>
-              <p>City, State - PIN</p>
+              <p>Balaji Estate, Manda Dungar</p>
+              <p>Rajkot, Gujarat</p>
               <p className="pt-2">
-                <a href="tel:+91XXXXXXXXXX" className="hover:text-gold transition-colors">
-                  +91 XXXXX XXXXX
+                <a href="tel:+918690599990" className="hover:text-gold transition-colors">
+                  +91 86905 99990
                 </a>
               </p>
               <p>
-                <a href="mailto:info@shreebajrang.com" className="hover:text-gold transition-colors">
-                  info@shreebajrang.com
+                <a href="mailto:ShreeBajrangPipe@Gmail.com" className="hover:text-gold transition-colors">
+                  ShreeBajrangPipe@Gmail.com
                 </a>
               </p>
             </div>
