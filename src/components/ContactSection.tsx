@@ -32,20 +32,20 @@ const ContactSection = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 XXXXX XXXXX",
-      href: "tel:+91XXXXXXXXXX",
+      value: "+91 86905 99990",
+      href: "tel:+918690599990",
     },
     {
       icon: Mail,
       label: "Email",
-      value: "info@shreebajrang.com",
-      href: "mailto:info@shreebajrang.com",
+      value: "ShreeBajrangPipe@Gmail.com",
+      href: "mailto:ShreeBajrangPipe@Gmail.com",
     },
     {
       icon: MapPin,
       label: "Address",
-      value: "Industrial Area, City, State - PIN",
-      href: "#",
+      value: "Balaji Estate, Manda Dungar, Rajkot",
+      href: "https://maps.google.com/?q=Balaji+Estate+Manda+Dungar+Rajkot",
     },
   ];
 
