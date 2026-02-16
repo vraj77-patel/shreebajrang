@@ -22,7 +22,7 @@ const Footer = () => {
               <img src={logo} alt="Shree Bajrang" className="w-16 h-16 object-contain" />
               <div>
                 <h3 className="font-heading text-xl font-bold">Shree Bajrang</h3>
-                <p className="text-sm text-secondary-foreground/70">Acrelic Bangles Pipe</p>
+                <p className="text-sm text-secondary-foreground/70">Acrylic Bangles Pipe</p>
               </div>
             </a>
             <p className="text-secondary-foreground/70 max-w-md mb-6">
@@ -79,7 +79,7 @@ const Footer = () => {
       <div className="border-t border-secondary-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-secondary-foreground/60">
-            <p>© {currentYear} Shree Bajrang Acrelic Bangles Pipe. All rights reserved.</p>
+            <p>© {currentYear} Shree Bajrang Acrylic Bangles Pipe. All rights reserved.</p>
             <p className="flex items-center gap-2">
               Made with <span className="text-gold">♦</span> in India
             </p>

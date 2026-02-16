@@ -69,13 +69,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img alt="Shree Bajrang Acrelic Bangles Pipe" className="h-14 w-14 object-contain" src="/lovable-uploads/406ed591-bcfc-489b-8c7c-13e8531a9f77.png" />
+            <img alt="Shree Bajrang Acrylic Bangles Pipe" className="h-14 w-14 object-contain" src="/lovable-uploads/406ed591-bcfc-489b-8c7c-13e8531a9f77.png" />
             <div className="hidden sm:block">
               <h1 className="font-heading text-lg font-semibold text-foreground leading-tight">
                 Shree Bajrang
               </h1>
               <p className="text-xs text-muted-foreground tracking-wider">
-                Acrelic Bangles Pipe
+                Acrylic Bangles Pipe
               </p>
             </div>
           </Link>
