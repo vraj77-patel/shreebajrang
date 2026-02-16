@@ -225,7 +225,7 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto">
             {[
-            { icon: Factory, value: "10+", label: "Years Experience" },
+            { icon: Factory, value: "5+", label: "Years Experience" },
             { icon: Users, value: "500+", label: "Happy Clients" },
             { icon: Award, value: "100%", label: "Quality Assured" }].
             map((stat, index) =>
