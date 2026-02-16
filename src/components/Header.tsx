@@ -6,23 +6,23 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Products", href: "#products" },
-  { name: "Catalog", href: "/catalog", isRoute: true },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Why Us", href: "#why-us" },
-  { name: "Contact", href: "#contact" },
-];
+{ name: "Home", href: "#home" },
+{ name: "About", href: "#about" },
+{ name: "Products", href: "#products" },
+{ name: "Catalog", href: "/catalog", isRoute: true },
+{ name: "Gallery", href: "#gallery" },
+{ name: "Why Us", href: "#why-us" },
+{ name: "Contact", href: "#contact" }];
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const renderNavLink = (link: typeof navLinks[0], isMobile = false) => {
-    const baseClass = isMobile
-      ? "text-base font-medium text-foreground hover:text-primary transition-colors py-2"
-      : "text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 relative group";
+    const baseClass = isMobile ?
+    "text-base font-medium text-foreground hover:text-primary transition-colors py-2" :
+    "text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 relative group";
 
     if (link.isRoute) {
       return (
@@ -30,14 +30,14 @@ const Header = () => {
           key={link.name}
           to={link.href}
           onClick={() => setIsOpen(false)}
-          className={baseClass}
-        >
+          className={baseClass}>
+
           {link.name}
-          {!isMobile && (
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-gold group-hover:w-full transition-all duration-300" />
-          )}
-        </Link>
-      );
+          {!isMobile &&
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-gold group-hover:w-full transition-all duration-300" />
+          }
+        </Link>);
+
     }
 
     // For hash links, handle navigation based on current route
@@ -53,14 +53,14 @@ const Header = () => {
         key={link.name}
         href={location.pathname === "/" ? link.href : "/" + link.href}
         onClick={handleClick}
-        className={baseClass}
-      >
+        className={baseClass}>
+
         {link.name}
-        {!isMobile && (
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-gold group-hover:w-full transition-all duration-300" />
-        )}
-      </a>
-    );
+        {!isMobile &&
+        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-gold group-hover:w-full transition-all duration-300" />
+        }
+      </a>);
+
   };
 
   return (
@@ -69,7 +69,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Shree Bajrang Acrelic Bangles Pipe" className="h-14 w-14 object-contain" />
+            <img alt="Shree Bajrang Acrelic Bangles Pipe" className="h-14 w-14 object-contain" src="/lovable-uploads/406ed591-bcfc-489b-8c7c-13e8531a9f77.png" />
             <div className="hidden sm:block">
               <h1 className="font-heading text-lg font-semibold text-foreground leading-tight">
                 Shree Bajrang
@@ -99,8 +99,8 @@ const Header = () => {
           <button
             className="lg:hidden p-2 text-foreground"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
+            aria-label="Toggle menu">
+
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -108,13 +108,13 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background border-b border-border overflow-hidden"
-          >
+        {isOpen &&
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          className="lg:hidden bg-background border-b border-border overflow-hidden">
+
             <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
               {navLinks.map((link) => renderNavLink(link, true))}
               <Button variant="gold" size="lg" className="mt-2" asChild>
@@ -125,10 +125,10 @@ const Header = () => {
               </Button>
             </nav>
           </motion.div>
-        )}
+        }
       </AnimatePresence>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Header;
