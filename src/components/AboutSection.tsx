@@ -44,7 +44,7 @@ const AboutSection = () => {
               Crafting Excellence in <span className="text-gradient-gold">Acrylic Pipes</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              Shree Bajrang Acrelic Bangles Pipe is a trusted name in the manufacturing of 
+              Shree Bajrang Acrylic Bangles Pipe is a trusted name in the manufacturing of 
               high-quality acrylic bangles pipes. With years of expertise and commitment to 
               excellence, we serve bangle manufacturers across India with precision-crafted 
               pipes that meet the highest standards of quality.

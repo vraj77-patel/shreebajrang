@@ -130,7 +130,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}>
 
-              Acrelic Bangles Pipe
+              Acrylic Bangles Pipe
             </motion.span>
           </motion.h1>
 
@@ -215,7 +215,7 @@ const HeroSection = () => {
             {/* Logo */}
             <motion.img
 
-              alt="Shree Bajrang Acrelic Bangles Pipe"
+              alt="Shree Bajrang Acrylic Bangles Pipe"
               className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} src="/lovable-uploads/45658394-5c39-413f-9548-2db0fd881934.png" />
