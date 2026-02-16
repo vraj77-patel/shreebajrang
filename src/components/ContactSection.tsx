@@ -11,43 +11,43 @@ const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { toast } = useToast();
-  
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
-    message: "",
+    message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for your inquiry. We will get back to you soon.",
+      description: "Thank you for your inquiry. We will get back to you soon."
     });
     setFormData({ name: "", phone: "", email: "", message: "" });
   };
 
   const contactInfo = [
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 86905 99990",
-      href: "tel:+918690599990",
-    },
-    {
-      icon: Mail,
-      label: "Email",
-      value: "ShreeBajrangPipe@Gmail.com",
-      href: "mailto:ShreeBajrangPipe@Gmail.com",
-    },
-    {
-      icon: MapPin,
-      label: "Address",
-      value: "Balaji Estate, Manda Dungar, Rajkot",
-      href: "https://maps.google.com/?q=Balaji+Estate+Manda+Dungar+Rajkot",
-    },
-  ];
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+91 86905 99990",
+    href: "tel:+918690599990"
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "ShreeBajrangPipe@Gmail.com",
+    href: "mailto:ShreeBajrangPipe@Gmail.com"
+  },
+  {
+    icon: MapPin,
+    label: "Address",
+    value: "Balaji Estate, Manda Dungar, Rajkot",
+    href: "https://maps.google.com/?q=Balaji+Estate+Manda+Dungar+Rajkot"
+  }];
+
 
   return (
     <section id="contact" className="py-20 lg:py-32 bg-background relative overflow-hidden">
@@ -60,8 +60,8 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-3xl mx-auto mb-16"
-        >
+          className="text-center max-w-3xl mx-auto mb-16">
+
           <span className="text-gold font-semibold tracking-wider uppercase text-sm">Contact Us</span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6">
             Get In <span className="text-gradient-gold">Touch</span>
@@ -77,8 +77,8 @@ const ContactSection = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+            transition={{ duration: 0.8, delay: 0.2 }}>
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
@@ -88,8 +88,8 @@ const ContactSection = () => {
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Enter your name"
                     required
-                    className="h-12 bg-card border-border focus:border-gold"
-                  />
+                    className="h-12 bg-card border-border focus:border-gold" />
+
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Phone Number</label>
@@ -98,8 +98,8 @@ const ContactSection = () => {
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="Enter phone number"
                     required
-                    className="h-12 bg-card border-border focus:border-gold"
-                  />
+                    className="h-12 bg-card border-border focus:border-gold" />
+
                 </div>
               </div>
 
@@ -111,8 +111,8 @@ const ContactSection = () => {
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="Enter your email"
                   required
-                  className="h-12 bg-card border-border focus:border-gold"
-                />
+                  className="h-12 bg-card border-border focus:border-gold" />
+
               </div>
 
               <div>
@@ -123,8 +123,8 @@ const ContactSection = () => {
                   placeholder="Tell us about your requirements..."
                   rows={5}
                   required
-                  className="bg-card border-border focus:border-gold resize-none"
-                />
+                  className="bg-card border-border focus:border-gold resize-none" />
+
               </div>
 
               <Button type="submit" variant="gold" size="xl" className="w-full">
@@ -139,19 +139,19 @@ const ContactSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-8"
-          >
+            className="space-y-8">
+
             <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant">
               <h3 className="font-heading text-2xl font-bold text-foreground mb-6">
                 Contact Information
               </h3>
               <div className="space-y-6">
-                {contactInfo.map((info) => (
-                  <a
-                    key={info.label}
-                    href={info.href}
-                    className="flex items-start gap-4 group"
-                  >
+                {contactInfo.map((info) =>
+                <a
+                  key={info.label}
+                  href={info.href}
+                  className="flex items-start gap-4 group">
+
                     <div className="p-3 bg-gradient-gold rounded-lg group-hover:scale-110 transition-transform duration-300">
                       <info.icon className="w-5 h-5 text-primary-foreground" />
                     </div>
@@ -162,7 +162,7 @@ const ContactSection = () => {
                       </p>
                     </div>
                   </a>
-                ))}
+                )}
               </div>
             </div>
 
@@ -172,15 +172,15 @@ const ContactSection = () => {
                 Business Hours
               </h3>
               <div className="space-y-2 text-muted-foreground">
-                <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
-                <p>Sunday: Closed</p>
+                <p>Sunday -Saturday : 9:00 AM - 7:00 PM</p>
+                <p>Wednesday: Closed</p>
               </div>
             </div>
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ContactSection;
