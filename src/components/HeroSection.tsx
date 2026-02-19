@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Award, Factory, Users, Phone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroProduct from "@/assets/hero-product.webp";
+const heroProduct = "/images/hero-product.webp";
 
 const floatingParticles = Array.from({ length: 20 }, (_, i) => ({
   id: i,
