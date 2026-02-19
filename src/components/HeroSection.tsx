@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Award, Factory, Users, Phone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import heroProduct from "@/assets/hero-product.webp";
 
 const floatingParticles = Array.from({ length: 20 }, (_, i) => ({
   id: i,
@@ -218,7 +218,7 @@ const HeroSection = () => {
               className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              src="/lovable-uploads/45658394-5c39-413f-9548-2db0fd881934.png"
+              src={heroProduct}
               width={224}
               height={224}
               loading="eager"

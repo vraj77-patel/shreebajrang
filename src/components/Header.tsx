@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import headerLogo from "@/assets/header-logo.webp";
 
 const navLinks = [
 { name: "Home", href: "#home" },
@@ -69,7 +69,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img alt="Shree Bajrang Acrylic Bangles Pipe" className="h-14 w-14 object-contain" src="/lovable-uploads/406ed591-bcfc-489b-8c7c-13e8531a9f77.png" width={56} height={56} loading="eager" decoding="async" fetchPriority="high" />
+            <img alt="Shree Bajrang Acrylic Bangles Pipe" className="h-14 w-14 object-contain" src={headerLogo} width={56} height={56} loading="eager" decoding="async" fetchPriority="high" />
             <div className="hidden sm:block">
               <h1 className="font-heading text-lg font-semibold text-foreground leading-tight">
                 Shree Bajrang
