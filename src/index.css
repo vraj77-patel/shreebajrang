@@ -208,7 +208,100 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
-
 .animate-hero-float {
   animation: hero-float 4s ease-in-out infinite;
+}
+
+@keyframes hero-pulse {
+  0%, 100% { r: 1.5; opacity: 0.5; }
+  50% { r: 3; opacity: 1; }
+}
+.animate-hero-pulse {
+  animation: hero-pulse 4s ease-in-out infinite;
+}
+
+@keyframes hero-path-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+.animate-hero-path-pulse {
+  animation: hero-path-pulse 6s ease-in-out infinite;
+}
+
+@keyframes hero-spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-hero-spin-slow {
+  animation: hero-spin-slow 40s linear infinite;
+}
+.animate-hero-spin-slow-reverse {
+  animation: hero-spin-slow 30s linear infinite reverse;
+}
+
+@keyframes hero-glow {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+.animate-hero-glow {
+  animation: hero-glow 6s ease-in-out infinite;
+}
+.animate-hero-glow-delayed {
+  animation: hero-glow 8s ease-in-out infinite 2s;
+}
+
+@keyframes hero-spin-icon {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-hero-spin-icon {
+  animation: hero-spin-icon 4s linear infinite;
+}
+
+@keyframes hero-fade-in {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-hero-fade-in {
+  animation: hero-fade-in 0.8s ease-out forwards;
+}
+
+@keyframes hero-fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-hero-fade-in-up {
+  opacity: 0;
+  animation: hero-fade-in-up 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+.animate-hero-fade-in-up-delayed {
+  opacity: 0;
+  animation: hero-fade-in-up 0.8s ease-out forwards;
+  animation-delay: 0.5s;
+}
+.animate-hero-fade-in-up-delayed-2 {
+  opacity: 0;
+  animation: hero-fade-in-up 0.8s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes whatsapp-entrance {
+  from { opacity: 0; transform: translateY(100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-whatsapp-entrance {
+  animation: whatsapp-entrance 0.5s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes whatsapp-wiggle {
+  0%, 85%, 100% { transform: rotate(0deg); }
+  88% { transform: rotate(15deg); }
+  91% { transform: rotate(-15deg); }
+  94% { transform: rotate(0deg); }
+}
+.animate-whatsapp-wiggle {
+  animation: whatsapp-wiggle 4s ease-in-out infinite;
 }
