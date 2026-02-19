@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import footerLogo from "@/assets/footer-logo.webp";
 
 const Footer = () => {
