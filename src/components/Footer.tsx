@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logo from "@/assets/logo.png";
+import footerLogo from "@/assets/footer-logo.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#home" className="flex items-center gap-4 mb-6">
-              <img src={logo} alt="Shree Bajrang" className="w-16 h-16 object-contain" width={64} height={64} loading="lazy" decoding="async" />
+              <img src={footerLogo} alt="Shree Bajrang" className="w-16 h-16 object-contain" width={64} height={64} loading="lazy" decoding="async" />
               <div>
                 <h3 className="font-heading text-xl font-bold">Shree Bajrang</h3>
                 <p className="text-sm text-secondary-foreground/70">Acrylic Bangles Pipe</p>
