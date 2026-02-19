@@ -164,9 +164,8 @@ const HeroSection = () => {
 
           {/* Logo with orbiting circles */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 1, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 1, type: "spring" }}
             className="relative w-48 h-48 md:w-56 md:h-56 mx-auto mb-14">
 
             {/* Outer rotating ring */}
