@@ -214,11 +214,16 @@ const HeroSection = () => {
 
             {/* Logo */}
             <motion.img
-
               alt="Shree Bajrang Acrylic Bangles Pipe"
               className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
               animate={{ y: [0, -8, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} src="/lovable-uploads/45658394-5c39-413f-9548-2db0fd881934.png" />
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              src="/lovable-uploads/45658394-5c39-413f-9548-2db0fd881934.png"
+              width={224}
+              height={224}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high" />
 
           </motion.div>
 
