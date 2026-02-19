@@ -212,11 +212,9 @@ const HeroSection = () => {
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }} />
 
             {/* Logo */}
-            <motion.img
+            <img
               alt="Shree Bajrang Acrylic Bangles Pipe"
-              className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
-              animate={{ y: [0, -8, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="w-full h-full object-contain relative z-10 drop-shadow-2xl animate-hero-float"
               src={heroProduct}
               width={224}
               height={224}
