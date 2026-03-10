@@ -1,4 +1,4 @@
-import footerLogo from "@/assets/footer-logo.webp";
+import footerLogo from "@/assets/footer-logo-optimized.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
