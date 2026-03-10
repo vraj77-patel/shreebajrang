@@ -1,6 +1,6 @@
 import { Award, Factory, Users, Phone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroProduct from "@/assets/logo.png";
+import heroProduct from "@/assets/logo-optimized.webp";
 
 const HeroSection = () => {
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {

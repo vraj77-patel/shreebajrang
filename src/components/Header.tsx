@@ -75,7 +75,7 @@ const Header = () => {
               height={56}
               loading="eager"
               decoding="async"
-              fetchPriority="high" src="/lovable-uploads/80df1ee7-8562-44fd-a13a-f345002f2418.png" />
+              fetchPriority="high" src="/lovable-uploads/header-logo-optimized.webp" />
 
             <div className="hidden sm:block">
               <h1 className="font-heading text-lg font-semibold text-foreground leading-tight">
